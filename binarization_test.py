@@ -21,7 +21,7 @@ while True:
         gray, 255,
         cv2.ADAPTIVE_THRESH_GAUSSIAN_C,
         cv2.THRESH_BINARY,
-        51, 10
+        55, -10
     )
 
     # 영상 출력
