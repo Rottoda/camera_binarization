@@ -4,13 +4,13 @@ import cv2
 cap = cv2.VideoCapture(1, cv2.CAP_DSHOW)
 
 if not cap.isOpened():
-    print("❌ 카메라를 열 수 없습니다.")
+    print("카메라를 열 수 없습니다.")
     exit()
 
 while True:
     ret, frame = cap.read()
     if not ret:
-        print("❌ 프레임을 읽을 수 없습니다.")
+        print("프레임을 읽을 수 없습니다.")
         break
 
     # 그레이스케일 변환
