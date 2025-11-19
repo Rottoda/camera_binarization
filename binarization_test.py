@@ -1,7 +1,7 @@
 import cv2
 
 # 카메라 장치 열기 (기본: 0번 카메라)
-cap = cv2.VideoCapture(1)
+cap = cv2.VideoCapture(1, cv2.CAP_DSHOW)
 
 if not cap.isOpened():
     print("❌ 카메라를 열 수 없습니다.")
